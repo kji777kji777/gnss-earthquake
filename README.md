@@ -36,7 +36,7 @@
 ## 🗂️ 전체 구성 및 동작 흐름
 
 ```
-gnss_earthquake.py
+gnss-earthquake.py
 │
 ├── [1] 설정 정보          ← NTRIP 서버 주소, 계정, 마운트포인트
 ├── [2] 파라미터           ← 임계값, 초기 샘플 수, 경보 조건 등
@@ -289,7 +289,7 @@ cd gnss-earthquake-monitor
 # 방법 B: 파일 직접 다운로드 후 폴더 이동
 mkdir gnss-monitor
 cd gnss-monitor
-# gnss_earthquake.py 파일을 이 폴더에 복사
+# gnss-earthquake.py 파일을 이 폴더에 복사
 ```
 
 ---
@@ -319,7 +319,7 @@ cd gnss-monitor
 
 ### Step 5 — 코드 설정
 
-`gnss_earthquake.py` 파일을 텍스트 편집기로 열고 아래 부분 수정:
+`gnss-earthquake.py` 파일을 텍스트 편집기로 열고 아래 부분 수정:
 
 ```python
 # ====== 이 부분만 수정하세요 ======
@@ -340,21 +340,21 @@ PASSWORD = 'your_password'    # ← igs-ip.net 비밀번호
 
 ```cmd
 cd gnss-monitor
-python gnss_earthquake.py
+python gnss-earthquake.py
 ```
 
 ### 🍎 macOS / 🐧 Linux
 
 ```bash
 cd gnss-monitor
-python3 gnss_earthquake.py
+python3 gnss-earthquake.py
 ```
 
 ### 🖥️ 백그라운드 실행 (Linux / macOS)
 
 ```bash
 # 터미널 종료 후에도 계속 실행
-nohup python3 gnss_earthquake.py > run.log 2>&1 &
+nohup python3 gnss-earthquake.py > run.log 2>&1 &
 echo "PID: $!"
 ```
 
