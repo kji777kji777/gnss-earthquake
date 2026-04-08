@@ -455,6 +455,11 @@ MAX_RECONNECT_TRY   = 5      # 자동 재연결 최대 횟수
 
 ---
 
+## 📄 라이선스
+MIT License
+
+---
+
 <div align="center">
 
 Made with ❤️ for earthquake research and education  
